@@ -1,71 +1,120 @@
+
 <!DOCTYPE html>
-</html>
-    <head>
-    <title>Ballet Info</title>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>My Ballet Experience</title>
+  <script src="script.js"></script>
     
+  <style>
+    table, th, td {
+      border: 1px solid black;
+       /* Makes the borders look cleaner */
+      padding: 10px;
+      border-width:1px;
+      border-color:ivory;
+    }
 
-    <body>
-    </head>
-    <body>
-        <h1>Information about Ballet</h1>
-        <p>Ballet is a dance form with an emphasis on grace, control and precision.
-            Some things worked on in ballet are <ul>
-                <li>Flexibility(not just with the legs, but with the foot)</li>
-                <li>Strength and balance(also a lot of emphasis on the feet)</li>
-                <li>Posture(because the way you stand significantly affects the way you dance)</li>
-            </ul>  Also, some female dancers dance <em>en pointe</em> an advanced dance level in ballet where dancers dance on the tips of their toes, which has prerequisites of flexibility, strength, and training in the feet. There are also five basic foot positions involved, and french terminology is used such as <em>plié and tendu. </em> A famous ballet showcase done in many studios is the nutcracker. If you want to build a strong technique in dance, ballet is a good style for you.</p>
+    .section-row {
+      display: flex;
+      align-items: center; 
+      margin-bottom: 30px; 
+    }
 
-            <style>
-table, th, td {
-  border: 1px solid black;
-}
-</style>
+    .section-row img {
+      border-radius: 20px;
+    }
+
+    .section-text {
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 20px; 
+      width: 60%;
+      margin: 0 20px; /* Space between text and image */
+    }
+
+    /* This class flips Section 2 */
+    .reverse {
+      flex-direction: row-reverse;
+    }
+  </style>
+  
 </head>
 <body>
+<h1>Ballet Info page</h1>
+         <nav class="navbar"><ul>
+          <li><a href="index.html">Home page</a></li>
+                <li><a href="ballet.html">Ballet Info</a></li>
+                <li><a href="jazz.html">Jazz Info</a></li>
+                <li><a href="contemporary.html">Contemporary info</a></li>
+                <li><a href="mydance.html">My dance info</a></li>
+            </ul></nav>
+  <p>Ballet is a dance form with an emphasis on grace, control and precision. Some things worked on in ballet are:</p>
 
-<h2>Journey To Pointe</h2>
+  <ul>
+      <li style="color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Flexibility (not just with the legs, but with the foot)</li>
+      <li style="color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Strength and balance (also a lot of emphasis on the feet)</li>
+      <li style="color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Posture (because the way you stand significantly affects the way you dance)</li>
+  </ul>
 
-<p>This type of Journey to being en pointe applies to students who start ballet at a young age. Everyone has different journies and reaches pointe at their own pace, which is okay.</p>
-
-<table style="width:100%">
-  <tr>
-    <th>Age Range</th>
-    <th>What you are focusing on</th> 
-    <th>How close you are to pointe</th>
-  </tr>
-  <tr>
-    <td>6-8</td>
-    <td>You are a young kid, and you are still focusing on learning the basic positions of ballet and coordination. Pointe is a long way to go for you, as you have to develop some muscle memory and motor skills in dance first.</td>
-    <td>Not very close-You still have to build a good foundation</td>
-  </tr>
-  <tr>
-    <td>9-11</td>
-    <td>You have built a foundation and coordination from when you were younger. Now, you are beginning to focus on strengthening your foot, training it, and stretching it for the next period of time. This will start to get your muscles used to a good arch in your feet, which you will need when you start pointe years later. Throughout the next two years, with consistency, you will see your foot become more flexible and strong, and you will be ready to learn even harder combinations with your feet.</td>
-    <td>Getting there-Keep staying consistent in stretching and strengthening your feet</td>
-  </tr>
-  <tr>
-    <td>11-12</td>
-    <td>You are a pre teen with a lot of foundational and somewhat intermediate technique. You have reached the stage where you need to be more consistent in training your foot. You have a high possibility of taking your pointe exam soon, which needs strong preparation, as this is a careful assessment so you don't get injuries in your feet. Also, your feet bones are reaching the point where they are harder, which makes it safer to go en pointe.</td>
-    <td>Almost there! Keep working on your feet and preparing them for a pre pointe exam!</td>
-  </tr>
-  <tr>
-    <td>13-15</td>
-    <td>You have just started pointe, and you are going to begin it with a lot of foot articulation at the barre. You need to get your feet trained to be comfortable on the tips of their toes. Throughout the next two years, you will start to do pointe across the floor, starting at simpler combinations, but then start to get harder.</td>
-    <td>Getting comfortable and more advanced en pointe</td>
-  </tr>
-  <tr>
-    <td>16-18</td>
-    <td>You are comfortable en pointe, and you can do turns, leaps and variations en pointe. You are learning more advanced ballet variations and performing more complicated dance roles in the nutcracker. Standing on the tips of your toes is easy for you now, and you are attending Joffery Ballet workshops and performing at YAGP. These next few years are building on more advanced moves en pointe, which is the step to becoming a professional in ballet, if it is somethingyou want to do in college or for a career.</td>
-    <td>Extremely advanced pointe dancer-Taking the steps to become a professional</td>
-  </tr>
-</table>
-
-            <img src="image/ballet-positions-of-the-arms-header.webp" style="width:450px;height:350px"> <span></span> <img src="image/s-l1200.jpg" style="width:450px;height:350px"> <span></span> <img src="image/BestSnow+EDIT.webp" style="width:450px;height:350px"> <span></span>
+  <!-- Section 1: Image Left, Text Right -->
+  <div class="section-row" ">
+      <img src="image/ballet-positions-of-the-arms-header.webp" style="width:200px; height:120px; padding:10px; background-color:rgba(120, 114, 143, 0.63);"> 
+      <p class="section-text" style="font-size:16px">In ballet, there are 5 basic positions that are taught in beginner class. The five positions are: first, second, third, fourth and fifth. These positions are used in all levels of ballet training, and learning these positions is one of the most crucial things to do to master ballet technique. Normally in a ballet class, you do barre at the beginning, and these positions are done in barre combinations which help build technique. These positions are incorporated into across the floor, center, stretching, strengthening, skills and performances. For example, pirouettes are commonly done in fourth and fifth position. Normally in ballet classes, these positions are done first at barre before doing them in center.</p>
+  </div>
         
+  <!-- Section 2: Image Right, Text Left (using the "reverse" class) -->
+  <div class="section-row reverse">
+      <img src="image/istockphoto-471236699-612x612.jpg" style="width:225px; height:160px;padding:10px; background-color:rgba(120, 114, 143, 0.63)">
+      <p class="section-text" style="font-size:18px;">Also, some female dancers dance en pointe—an advanced dance level where dancers dance on the tips of their toes. This requires flexibility, strength, and training. Dancing on pointe is not something you can do overnight. Your feet have to be well trained and evaluated through an exam before you can even recieve the pointe shoes. It depends on your age and level of training, but being ready to go on pointe can take many years. For example, if you start ballet at a young age, it takes years before you even start preparing for pointe. However, if you are older and training consistently, it can take less time for you to get on pointe. Another thing going en pointe depends on is the hardening of your feet bones. Without fully hardened bones in your foot, it is extremely unsafe to go en pointe, and it can lead to long term injuries.</p>
+  </div>
+    
+  <!-- Section 3: Image Left, Text Right -->
+  <div class="section-row">
+      <img src="image/BestSnow+EDIT.webp" style="width:225px; height:150px;padding:10px; background-color:rgba(120, 114, 143, 0.63)">
+      <p class="section-text" style="font-size:19px;">There are many types of ballet performances. At studios, one of the most popular types is the nutcracker. In ballet performances like the nutcracker, auditions are normally held, roles are recieved, and many combinations related to ballet technique are performed to tell the story. Variations en pointe and ensemble dance scenes are commonly done. For example, in this photo, there is an ensemble group of dancers en pointe portraying snow, and there is a snow queen en pointe doing a variation. The dance pieces in the show are based of off the technique and dance moves students build on to and learn in their ballet classes.  </p>
+  </div>
 
+  <h2>Journey To Pointe</h2>
+  <p>This journey applies to students who start ballet at a young age. Everyone reaches pointe at their own pace, which is absolutely fine!</p>
 
-</body>
+  <table style="width:100%"; color:ivory>
+    <tr>
+      <th style="color:ivory">Age Range</th>
+      <th style="color:ivory">What you are focusing on</th> 
+      <th style="color:ivory">How close you are to pointe</th>
+    </tr>
+    <tr>
+      <td style=color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;>6-8</td>
+      <td style=color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;>Learning basic positions and coordination.</td>
+      <td style=color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;>Building a foundation.</td>
+    </tr>
+    <tr>
+      <td style=color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;>8-10</td>
+      <td style=color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;>Building strength in the ankles and feet, and learning more complex movements.</td>
+      <td style=color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;d>Developing the necessary strength.</td>
+    </tr>
+    <tr>
+      <td style=color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;>10-12</td>
+      <td style=color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;>Refining technique and starting to prepare for pointe work.</td>
+      <td style=color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;>Almost there! Ready for evaluations.</td>
+    </tr>
+    <tr>
+      <td style=color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;>12+</td>
+      <td style=color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;>Starting pointe work (if ready) and continuing to build strength and grace.</td>
+      <td style=color:ivory; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;>On pointe or working towards it!</td>
+    </tr>
+  </table>
 
+<div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="image/">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="image/pexels-kate-mcneil-912946339-19916793.jpg">
+  </div>
+  <!-- The JS will insert the slider here automatically -->
+</div>
 
-
-</html>
+<body>
+  </body>
+  </html>

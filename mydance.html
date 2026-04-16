@@ -1,24 +1,56 @@
 <!DOCTYPE html>
-</html>
-    <head>
+<html>
+<head>
     <title>My dance experience + tips</title>
-
-    <body>
-    </head>
-    <body>
-        <h1>My Dance Experience</h1>
-        <p>At my dance studio,I do these three styles with a few more. I have performed in performances such as annual recitals and the nutcracker. Dance has been a great experience for me, as it is an opportunity for me to learn and spend time with dance friends. However, it has also been a developing process for me, and I've improved along the way.</p>
-        <h1>Tips for fast Improvement</h1>
-        <p>Here are 5 essential tips to improve quickly in dance and make your experience even more special.</p> <ol>
-        <li>Don't be afraid of corrections. Getting a million corrections in one class is better than getting zero. You shouldn't worry that you are bad at dancing that you are recieving the correction, but what you should do to fix it. Every correction is part of growth in dance.</li>
-        <li>Add extra practice for your weaker spots. For example, if you lack flexibility, add a stretch routine to do daily. Even if you have a tight schedule, 5-10 minutes of stretching will definetly help. The same goes for strengthening or whatever is worked on in your class.</li>
-        <li>Take challenges. If there is a combo you are learning in class that looks impossible or an audition opportunity with many people, do it. Every failure is something to grow from, and if you don't try to see how it feels like to put yourself out there, how can you succeed later? Also, no one is judging you, because everyone was once in the same spot you are.</li>
-        <li>Put your best effort into everything. For example, if you have practiced a combination and know it well, add some performance quality to it! Really embracing each part of the dance will just be extra practice for when you take the stage.</li>
-        <li>Find performance opportunities. See what your studio offers in terms of performances, and if you are eligible for it, do it! Every performance is an opportunity to put yourself out there, and also an opportunity to grow and know what to do better next time!</li>
-        </ol>
-    <img src="image/IMG_1201.JPG" style="width:350px;height:350px"><span></span>
-    <img src="image/IMG_0148.jpeg" style="width:350px;height:350px"><span></span>
+    <link rel="stylesheet" href="styles.css">
     
+</head>
+<body>
 
-       
-           
+    <!-- Header Container with the Hyperlinked Image -->
+
+        <h1>My Dance Experience</h1>
+              <nav class="navbar"><ul>
+                <li><a href="index.html">Home page</a></li>
+                <li><a href="ballet.html">Ballet Info</a></li>
+                <li><a href="jazz.html">Jazz Info</a></li>
+                <li><a href="contemporary.html">Contemporary info</a></li>
+                <li><a href="mydance.html">My dance info</a></li>
+            </ul></nav>
+   <input type="button" onclick="typeWriter()" value="Fun Fact About Me">
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+// 2. Updated the text to match your "Fun Fact"
+var txt = 'At my studio, I do all three of these styles.'; 
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+    
+    
+    <p>At my dance studio, I do these three styles with a few more. I have performed in performances such as annual recitals and the nutcracker. Dance has been a great experience for me, as it is an opportunity for me to learn and spend time with dance friends. However, it has also been a developing process for me, and I've improved along the way.</p>
+    
+    <h3>Tips for fast Improvement</h3>
+    <p>Here are 5 essential tips to improve quickly in dance and make your experience even more special.</p>
+    <ol style="text-align: left; max-width: 600px; font-size: small; margin: 0;">
+        <li style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:ivory;">Don't be afraid of corrections. Getting a million corrections in one class is better than getting zero. You shouldn't worry that you are bad at dancing that you are recieving the correction, but what you should do to fix it. Every correction is part of growth in dance.</li>
+        <li style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:ivory;">Add extra practice for your weaker spots. For example, if you lack flexibility, add a stretch routine to do daily. Even if you have a tight schedule, 5-10 minutes of stretching will definetly help. The same goes for strengthening or whatever is worked on in your class.</li>
+        <li style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:ivory;">Take challenges. If there is a combo you are learning in class that looks impossible or an audition opportunity with many people, do it. Every failure is something to grow from, and if you don't try to see how it feels like to put yourself out there, how can you succeed later? Also, no one is judging you, because everyone was once in the same spot you are.</li>
+        <li style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:ivory;">Put your best effort into everything. For example, if you have practiced a combination and know it well, add some performance quality to it! Really embracing each part of the dance will just be extra practice for when you take the stage.</li>
+        <li style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:ivory;">Find performance opportunities. See what your studio offers in terms of performances, and if you are eligible for it, do it! Every performance is an opportunity to put yourself out there, and also an opportunity to grow and know what to do better next time!</li>
+    </ol>
+            <img src="image/IMG_1201.JPG" class="floatleft" style="width:200px; height:200px; object-fit: cover; display:block;">
+            <img src="image/IMG_0148.jpeg" class="floatleft" style="width:200px; height:200px; object-fit: cover; display:block;">
+            <img src="image/Screenshot 2026-04-09 8.04.08 AM.png" class="floatleft" style="width:200px; height:200px; object-fit:cover; flex-direction:column;">
+</body>
+</html>

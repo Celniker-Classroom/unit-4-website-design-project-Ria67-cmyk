@@ -1,6 +1,125 @@
 /* Add Global styles here */
 body {
-    font-family: 'Short Stack', cursive;
-    background-color: #fadee7; /* Light grey background */
-    padding: 40px;
-  color: #482d38;
+    background-color:rgb(184, 177, 216); 
+    margin: 0px;
+    padding-right:170px;
+}
+main {
+  margin-left:40px;
+  margin-right:40px;
+}
+h1 {font-family:Tahoma, sans-serif;
+    font-size:40px;
+    text-align: center;
+  color:ivory;}
+
+  .navbar ul {
+  list-style-type: none;
+  background-color: rgba(147, 140, 173, 0.582);
+  padding: 0px;
+  margin: 0px;            
+  height: 100vh;          
+  overflow: hidden;
+  text-spacing-trim: space-all;
+  
+  /* ADD THESE TWO LINES */
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; 
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: rgba(120, 114, 143, 0.63);
+  text-align: center;
+}
+
+.navbar li {
+  text-align: center;
+}
+
+h2 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size:37px;
+text-align:center;
+color:ivory;}
+h3 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size:35px;
+text-align:center;
+color:ivory;}
+p {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size:18px;
+text-align:left;
+color:ivory;}
+div {
+  clear: both;
+  overflow: hidden; /* This helps the container 'hug' the floated images inside it */
+  padding-bottom: 20px; 
+}
+
+img{
+  display: block;
+  border-radius:20%;
+  margin:30px;
+}
+
+.floatleft {
+  float:left;
+   background-color:rgba(120, 114, 143, 0.63);
+    padding: 10px; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Container must match your image size exactly */
+.img-comp-container {
+  position: relative;
+  width: 300px; /* Increased size so it's easier to see */
+  height: 300px;
+  margin: 20px auto;
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+/* ANTI-CHOP: This forces the image to stay full size even when its parent shrinks */
+.img-comp-img img {
+  display: block;
+  width: 300px !important; 
+  height: 300px !important;
+  max-width: none !important;
+  object-fit:cover;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  width: 40px;
+  height: 40px;
+  background-color: #d89efa;
+  border: 3px solid white;
+  border-radius: 50%;
+  opacity: 0.8;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
