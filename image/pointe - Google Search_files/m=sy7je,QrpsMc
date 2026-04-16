@@ -1,0 +1,9 @@
+loaded_h_0(function(_){var window=this;
+_.M6r=_.y("QrpsMc",[_.Yl]);
+_.v("QrpsMc");
+var ZTv=function(a){a.Ca||(a.Ca=!0,_.Bp(a.Ub.oa(),a.Aa,15).log())},$Tv=class extends _.cs{static Ta(){return{service:{Ub:_.Gu}}}constructor(a){super(a.Oa);this.Ca=!1;this.Ub=a.service.Ub;this.Ka=this.Ia("W7hAGe");this.Aa=this.Ka.el();this.Ba=this.Ia("ZtOxCb").el()}Vb(){this.Aa.value="";super.Vb()}Ea(){ZTv(this);_.Bp(this.Ub.oa(),this.Ba,3).log();this.submit()}oa(){ZTv(this)}Qc(a){a=a.event;if(a.key==="Enter"){let b;(b=a.preventDefault)==null||b.call(a);this.submit()}}Ha(a){a=a.event;a=a.inputType===
+"insertFromPaste"?a.data:null;const b=this.getSelection();b&&b===this.Aa.value&&a!==b&&this.trigger("npkXDe")}bka(){const a=this.Aa.value.length===0;a&&this.trigger("npkXDe");this.Ba.setAttribute("disabled",a?"true":"false");this.Ba.setAttribute("aria-disabled",a?"true":"false");this.Ba.setAttribute("tabindex",a?"-1":"0")}Da(){this.Aa.value=""}getSelection(){return this.Aa.selectionStart===null||this.Aa.selectionEnd===null?"":this.Aa.value.substring(this.Aa.selectionStart,this.Aa.selectionEnd)}submit(){this.Aa&&
+this.Aa.value.trim().length>0&&this.trigger("REY9L",this.Aa.value.trim())}};$Tv.prototype.$wa$Zpug7c=function(){return this.Da};$Tv.prototype.$wa$e4JwSe=function(){return this.bka};$Tv.prototype.$wa$nhG30c=function(){return this.Ha};$Tv.prototype.$wa$h5M12e=function(){return this.Qc};$Tv.prototype.$wa$VTwMI=function(){return this.oa};$Tv.prototype.$wa$HiUbje=function(){return this.Ea};$Tv.prototype.$wa$k4Iseb=function(){return this.Vb};_.es(_.M6r,$Tv);
+_.w();
+});
+// Google Inc.
